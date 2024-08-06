@@ -29,8 +29,6 @@ export const putDb = async (content) => {
   // await store.add(content);
   const request = await store.put({ id: 1, value: content });
 
-  console.log(request.value);
-
   console.log('Content added to the database');
 
   // Ensure the transaction is completed
